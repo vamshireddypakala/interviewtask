@@ -1,0 +1,23 @@
+<button (click)='openE1()'>click to open excercise 1</button>
+<section *ngIf="showLogo">
+    <div class="logo-section" [ngClass]='{"animated":  showLogoClass,"fadeOut" :showLogoClass}'
+        data-animation="animated fadeOut">
+        <h1 [ngClass]='{"animated":  showLogoClass,"zoomOut" :showLogoClass}' data-animation="animated zoomOut">FORT
+        </h1>
+        <p><a href='javascript:;' (click)='openLogo()'>Click above</a></p>
+    </div>
+</section>
+<section *ngIf="showRobot">
+    <div class="add-robo" [ngClass]='{"animated":  showLogoClass,"fadeIn" :showLogoClass}'
+        data-animation="animated fadeIn">
+        <p>welcome</p>
+        <div class='border-rotation'></div>
+        <img src='../../assets/images/robo.png'>
+    </div>
+</section>
+<div class="content">
+    <div class="frame">
+        <div class="clr">
+        </div>
+    </div>
+</div>
